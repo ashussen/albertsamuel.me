@@ -231,4 +231,5 @@ a[data-scroll-name = "#1"] ~ .wide.image .container .title.big {
 
 .footer .s-repeatable .s-image img {
   border-radius: 50%;
+  width: 140px;
 }

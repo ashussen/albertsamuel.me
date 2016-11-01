@@ -7,6 +7,7 @@ var Footer = React.createClass({
     var github = require('../images/Github.png');
     var quora = require('../images/Quora.png');
     var linkedin = require('../images/Linkedin.png');
+    var stackoverflow = require('../images/StackOverflow.png');
 
 		return (
       <li className="footer" style={{'background': '#CBC5C1'}}>
@@ -22,38 +23,45 @@ var Footer = React.createClass({
               </div>
             </div>
             <div className="s-mh s-repeatable">
-              <div data-sorting-index="0" className="three columns half-fixed no-float s-repeatable-item">
+              <div data-sorting-index="0" className="columns half-fixed no-float s-repeatable-item">
                 <div className="s-component s-image">
                     <a href="mailto:contact@albertsamuel.com" target="_blank">
-                      <img alt="Twitter" title="Twitter" data-description="" src={mail} className=""/>
+                      <img alt="Email" title="Email" data-description="" src={mail} className=""/>
                     </a>
                 </div>
               </div>
-              <div data-sorting-index="0" className="three columns half-fixed no-float s-repeatable-item">
+              <div data-sorting-index="0" className="columns half-fixed no-float s-repeatable-item">
                 <div className="s-component s-image">
                     <a href="https://twitter.com/as_albert" target="_blank">
                       <img alt="Twitter" title="Twitter" data-description="" src={twitter} className=""/>
                     </a>
                 </div>
               </div>
-              <div data-sorting-index="0" className="three columns half-fixed no-float s-repeatable-item">
+              <div data-sorting-index="0" className="columns half-fixed no-float s-repeatable-item">
                 <div className="s-component s-image">
                     <a href="https://github.com/ashussen" target="_blank">
-                      <img alt="Twitter" title="Twitter" data-description="" src={github} className=""/>
+                      <img alt="Github" title="Github" data-description="" src={github} className=""/>
                     </a>
                 </div>
               </div>
-              <div data-sorting-index="0" className="three columns half-fixed no-float s-repeatable-item">
+              <div data-sorting-index="0" className="columns half-fixed no-float s-repeatable-item">
                 <div className="s-component s-image">
                     <a href="https://www.quora.com/profile/Albert-Samuel" target="_blank">
-                      <img alt="Twitter" title="Twitter" data-description="" src={quora} className=""/>
+                      <img alt="Quora" title="Quora" data-description="" src={quora} className=""/>
                     </a>
                 </div>
               </div>
-              <div data-sorting-index="0" className="three columns half-fixed no-float s-repeatable-item">
+              <div data-sorting-index="0" className="columns half-fixed no-float s-repeatable-item">
+                <div className="s-component s-image">
+                    <a href="http://stackoverflow.com/users/2990720/albertsamuel" target="_blank">
+                      <img alt="StackOverflow" title="StackOverflow" data-description="" src={stackoverflow} className=""/>
+                    </a>
+                </div>
+              </div>
+              <div data-sorting-index="0" className="columns half-fixed no-float s-repeatable-item">
                 <div className="s-component s-image">
                     <a href="https://www.linkedin.com/in/albertsamuel" target="_blank">
-                      <img alt="Twitter" title="Twitter" data-description="" src={linkedin} className=""/>
+                      <img alt="Linkedin" title="Linkedin" data-description="" src={linkedin} className=""/>
                     </a>
                 </div>
               </div>
