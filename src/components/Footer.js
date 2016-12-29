@@ -17,8 +17,7 @@ var Footer = React.createClass({
               <div className="s-text">
                 <h2 className="s-component-content s-font-title" style={{'fontFamily':'ubuntu'}}>
                   <p>I'm Sydney based,<br />passionate Web Developer,</p>
-                  <p>currently looking for</p>
-                  <p>a job opportunities.</p>
+                  <p>do not hesitate to contact me.</p>
                 </h2>
               </div>
             </div>

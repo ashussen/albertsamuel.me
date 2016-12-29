@@ -11,6 +11,8 @@ var Portfolio = React.createClass({
       var cashmere = {color: '#CBC5C1'}
 
       //images
+      var dp = require('../images/DailyPress.png');
+      var s1t2 = require('../images/S1T2.png');
       var sydneyTools = require('../images/SydneyTools.png');
       var cvig = require('../images/CVIG.png');
       var uts = require('../images/UTS.png');
@@ -36,6 +38,87 @@ var Portfolio = React.createClass({
                 <div className="clearfix s-rva">
                   <div className="s-rva-media offset-one five columns">
                     <div className="s-component s-media ">
+                        <img alt="" title="" data-description="" src={dp} className="lazyload"/>
+                    </div>
+                  </div>
+                  <div className="s-rva-text undefined nine columns">
+                    <div className="s-item-title">
+                      <div className="s-component s-text">
+                        <h3 className="s-component-content s-font-heading" style={gunMetal}>
+                          <p><a target="_blank" href="https://sydneytools.com.au">Daily Press</a></p>
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="s-item-subtitle">
+                      <div className="s-component s-text">
+                        <h6 className="s-component-content s-font-body" style={denim}>
+                          <strong>Web Developer</strong>, <em>Started December 2016</em>
+                        </h6>
+                      </div>
+                    </div>
+                    <div className="s-item-text">
+                      <div className="s-component s-text">
+                        <div className="s-component-content s-font-body">
+                          <p style={frenchBlue}><strong>Rosebery, NSW</strong></p>
+                          <p style={gunMetal}>
+                            Daily Press starts as a Design company, then grows to take Web Design and Development later on. I recruited as one of the early Developer here to develop client's website. <br />
+                            The culture of the company is really interesting, such a friendly environment and full of Designer's feel all over the office was my first impression in the company.
+                            <br /><br />
+                            It's only been a month for me being here, can't wait to get more experience and learning with Daily Press.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="s-layout-mediaLeft s-repeatable" style={ubuntuFont}>
+              <div data-sorting-index="0" className=" s-repeatable-item">
+                <div className="clearfix s-rva">
+                  <div className="s-rva-media offset-one five columns">
+                    <div className="s-component s-media ">
+                        <img alt="S1T2" title="S1T2" data-description="" src={s1t2} className="lazyload"/>
+                    </div>
+                  </div>
+                  <div className="s-rva-text undefined nine columns">
+                    <div className="s-item-title">
+                      <div className="s-component s-text">
+                        <h3 className="s-component-content s-font-heading" style={gunMetal}>
+                          <p><a target="_blank" href="https://s1t2.com.au">S1T2</a></p>
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="s-item-subtitle">
+                      <div className="s-component s-text">
+                        <h6 className="s-component-content s-font-body" style={denim}>
+                          <strong>Web Developer</strong>, <em>Finished December 2016</em>
+                        </h6>
+                      </div>
+                    </div>
+                    <div className="s-item-text">
+                      <div className="s-component s-text">
+                        <div className="s-component-content s-font-body">
+                          <p style={frenchBlue}><strong>Surry Hills, NSW</strong></p>
+                          <p style={gunMetal}>
+                            Great company with full of talented people. I found it really fun working with S1T2 that takes modern company concept, working with "Hot Desk" principle, and flexible working hours really take the best of one's creativity.
+                            <br />
+                            In development point of view, S1T2 use the bleeding edge technology to create an outstanding Customer Experience. The whole purpose of company make me see technology from different point of view, creating experience for customer and see a customer "WOW" face was a personal happiness for me personally.
+                            <br /><br />
+                            <a className="a-link" href="https://nodejs.org/en/" target="_blank">NodeJS</a>, <a className="a-link" href="http://gulpjs.com/" target="_blank">Gulp</a>, <a className="a-link" href="http://sass-lang.com/" target="_blank">Sass</a>, <a className="a-link" href="https://getcomposer.org/" target="_blank">Composers</a>, and more of the new technology for web development are in use in S1T2. All for improving productivity and creating outstanding Customer Experience.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="s-layout-mediaLeft s-repeatable" style={ubuntuFont}>
+              <div data-sorting-index="0" className=" s-repeatable-item">
+                <div className="clearfix s-rva">
+                  <div className="s-rva-media offset-one five columns">
+                    <div className="s-component s-media ">
                         <img alt="" title="" data-description="" src={sydneyTools} className="lazyload"/>
                     </div>
                   </div>
@@ -50,7 +133,7 @@ var Portfolio = React.createClass({
                     <div className="s-item-subtitle">
                       <div className="s-component s-text">
                         <h6 className="s-component-content s-font-body" style={denim}>
-                          <strong>Junior Web Developer</strong>, <em>Joined November 2015</em>
+                          <strong>Junior Web Developer</strong>, <em>Finished June 2016</em>
                         </h6>
                       </div>
                     </div>
@@ -142,7 +225,7 @@ var Portfolio = React.createClass({
                             Awesome peers, teacher, and environment sometimes made me dumbfounded, letting me realize that I am still lacking in this field. The urge of learning makes me do some self-learning and self-project during my Uni life.
                             Through ups and downs with friends was the most memorable momments.
                             <br /><br />
-                            <a href="http://utsprojectpitch.com.au/">UTS Project Pitch</a> showed me another prespective in technology.
+                            <a className="a-link" href="http://utsprojectpitch.com.au/" target="_blank">UTS Project Pitch</a> showed me another prespective in technology.
                             By joining this competition of startup idea, I learn the business side of a technology. This is the beginning of my interest growth in StartUp, as well as making friends outside of my degree.
                           </p>
                         </div>

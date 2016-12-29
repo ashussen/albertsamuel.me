@@ -228,7 +228,17 @@ a[data-scroll-name = "#1"] ~ .wide.image .container .title.big {
 .portfolio .s-font-heading a:visited{
   color: #3E3E3B;
 }
-
+.portfolio .a-link,
+.portfolio .a-link:hover,
+.portfolio .a-link:active,
+.portfolio .a-link:visited {
+  color: #4C586F;
+  text-decoration: none;
+  border-bottom: 1px dotted #4C586F;
+}
+.portfolio .a-link:hover {
+  border-bottom: none;
+}
 .footer .s-repeatable .s-image img {
   border-radius: 50%;
   width: 140px;

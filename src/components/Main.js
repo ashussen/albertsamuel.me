@@ -17,7 +17,7 @@ class App extends React.Component {
       <div className="index" id="s-content">
         {/*<Navbar />*/}
         <ul className="slides">
-        	<MyNameIs />
+          <MyNameIs />
           <Portfolio />
           <Footer />
         </ul>
