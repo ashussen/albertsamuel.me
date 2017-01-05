@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  <!-- body style="cursor: url('bug.png'), auto" -->
+    Hello! <br />
+    X: <span class="x"></span>
+    Y: <span class="y"></span><br />
+    Theta: <span class="theta"></span><br /><br />
+
+    Eye Position Left: <span class="eye-pos-left"></span><br />
+    Eye Position Top: <span class="eye-pos-top"></span><br />
+
+    <div style="position: fixed; bottom:calc(50% - 50px); left: calc(50% - 100px);">
+      <img class="eye-img-left" width="100" src="eye.png" id="eye-img-left"/>
+      <img class="eye-img-right" width="100" src="eye.png" id="eye-img-right"/>
+    </div>
+    <script>
+    var spanx = $('.x');
+    var spany = $('.y');
+
+    var eyeRelativePosition = document.getElementById("eye-img-left").getBoundingClientRect();
+    var eyeposx = eyeRelativePosition.right; //left eye right position is both eye center
+    var eyeposy = eyeRelativePosition.top + 50; //img width = 100, 50 is img center
+
+    $('.eye-pos-left').text(eyeposx);
+    $('.eye-pos-top').text(eyeposy);
+
+    function angle(cx, cy, ex, ey) {
+      var dy = ey - cy;
+      var dx = ex - cx;
+      var theta = Math.atan2(dy, dx); // range (-PI, PI]
+      theta *= 180 / Math.PI; // rads to degs, range (-180, 180]
+      return theta;
+    }
+
+    $("body").mousemove(function(e) {
+        spanx.text(e.pageX);
+        spany.text(e.pageY);
+        var angleEye = angle(eyeposx, eyeposy, e.pageX, e.pageY);
+        $('.theta').text(angleEye);
+
+        $('.eye-img-left').css('transform', 'rotate('+angleEye+'deg)');
+        $('.eye-img-right').css('transform', 'rotate('+angleEye+'deg)');
+
+    })
+    </script>
+  </body>
+</html>
