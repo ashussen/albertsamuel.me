@@ -3,6 +3,7 @@
     <!-- <meta http-equiv="refresh" content="0; url=http://albertsamuel.com/" /> -->
     <title>Asset - Albert Samuel </title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <style>
       body {
         font-family: 'Ubuntu', sans-serif;
@@ -10,6 +11,11 @@
         background: #ebeced;
         color: #3e3e3b;
         position: relative;
+        cursor: url('mouse_follow/bug.png'), auto;
+      }
+      h3 {
+        color: #4c586f;
+        padding-bottom: 20px;
       }
       .vertical-center {
         position: absolute;
@@ -39,14 +45,60 @@
         border-radius: 100px;
         background: #f5f5f5;
       }
+      .vertical-center .eye-container {
+        position: absolute;
+        left: calc(50% - 44px);
+        top: 76px;
+      }
+      .vertical-center .eye-container .eye-img-left {
+        margin-right: 11px;
+      }
     </style>
   </head>
   <body>
     <div class="vertical-center">
-      <img class="me" src="as-square.png" alt="Albert Samuel"/> <br />
-      <img class="logo" src="logo_oneline.png" alt="Albert Samuel"/>
+      <div class="images">
+        <div class="eye-container">
+          <img class="eye-img-left" width="34" src="mouse_follow/eye.png" id="eye-img-left"/>
+          <img class="eye-img-right" width="34" src="mouse_follow/eye.png" id="eye-img-right"/>
+        </div>
+        <img class="me" src="as-square.png" alt="Albert Samuel"/> <br />
+        <img class="logo" src="logo_oneline.png" alt="Albert Samuel"/>
+      </div>
       <h1>This is Albert Samuel's World of Assets!</h1>
+      <h3>Fun Facts #1: <br />Albert always find the bug!</h3>
       <p><a class="button" href="http://albertsamuel.com/">Go to Web</a></p>
     </div>
+    <script>
+      //Mouse Follow by Albert Samuel
+      var spanx = $('.x');
+      var spany = $('.y');
+
+      var eyeRelativePosition = document.getElementById("eye-img-left").getBoundingClientRect();
+      var eyeposx = eyeRelativePosition.right; //left eye right position is both eye center
+      var eyeposy = eyeRelativePosition.top + 50; //img width = 100, 50 is img center
+
+      $('.eye-pos-left').text(eyeposx);
+      $('.eye-pos-top').text(eyeposy);
+
+      function angle(cx, cy, ex, ey) {
+        var dy = ey - cy;
+        var dx = ex - cx;
+        var theta = Math.atan2(dy, dx); // range (-PI, PI]
+        theta *= 180 / Math.PI; // rads to degs, range (-180, 180]
+        return theta;
+      }
+
+      $("body").mousemove(function(e) {
+          spanx.text(e.pageX);
+          spany.text(e.pageY);
+          var angleEye = angle(eyeposx, eyeposy, e.pageX, e.pageY);
+          $('.theta').text(angleEye);
+
+          $('.eye-img-left').css('transform', 'rotate('+angleEye+'deg)');
+          $('.eye-img-right').css('transform', 'rotate('+angleEye+'deg)');
+
+      })
+    </script>
   </body>
 </html>
