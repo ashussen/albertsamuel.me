@@ -4,18 +4,21 @@
       .as-logo:hover {
         cursor: pointer;
       }
+      .as-logo .initial {
+        transform: translateX(143px);
+      }
       .as-logo .full-name .albert {
-        transform: translateX(-125px);
+        transform: translate(-127px, -3px);
       }
       .as-logo #albert-clipping rect {
-       width: 0;
+       x: 490;
         -webkit-transition: 1s linear;
            -moz-transition: 1s linear;
              -o-transition: 1s linear;
                 transition: 1s linear;
       }
       .as-logo:hover #albert-clipping rect {
-       width: 150;
+       x: 340;
         -webkit-transition: 1s linear;
            -moz-transition: 1s linear;
              -o-transition: 1s linear;
@@ -37,14 +40,16 @@
       } 
 
      .as-logo .full-name .samuel {
-        transform: translateX(-270px);
+        transform: translate(-125px, -3px);
+      }
+      .as-logo .initial .initial-first-half {
         -webkit-transition: 1s linear;
            -moz-transition: 1s linear;
              -o-transition: 1s linear;
                 transition: 1s linear; 
       }
-      .as-logo:hover .full-name .samuel {
-        transform: translateX(-125px);
+      .as-logo:hover .initial .initial-first-half {
+        transform: translateX(-147px);
         -webkit-transition: 1s linear;
            -moz-transition: 1s linear;
              -o-transition: 1s linear;
@@ -65,27 +70,14 @@
              -o-transition: 1s linear;
                 transition: 1s linear; 
       }
-      .as-logo .initial .initial-second-half {
-        -webkit-transition: 1s linear;
-           -moz-transition: 1s linear;
-             -o-transition: 1s linear;
-                transition: 1s linear;
-      }
-      .as-logo:hover .initial .initial-second-half {
-        transform: translateX(145px);
-        -webkit-transition: 1s linear;
-           -moz-transition: 1s linear;
-             -o-transition: 1s linear;
-                transition: 1s linear;
-      }
     </style>
   </head>
   <body> 
     <div>
-      <svg class="as-logo" xmlns="http://www.w3.org/2000/svg" viewBox="140 265 560 65">
+      <svg class="as-logo" xmlns="http://www.w3.org/2000/svg" viewBox="140 265 480 65">
         <defs>
           <clipPath id="albert-clipping">
-            <rect id="albert-clipping-rect" x="340" y="265" width="0" height="65" />
+            <rect id="albert-clipping-rect" x="340" y="265" width="150" height="65" />
           </clipPath>
           <clipPath id="samuel-clipping">
             <rect x="515" y="265" width="185" height="65" />
