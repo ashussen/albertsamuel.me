@@ -45,7 +45,7 @@ var Portfolio = React.createClass({
                     <div className="s-item-title">
                       <div className="s-component s-text">
                         <h3 className="s-component-content s-font-heading" style={gunMetal}>
-                          <p><a target="_blank" href="https://sydneytools.com.au">Daily Press</a></p>
+                          <p><a target="_blank" href="http://dailypress.com.au">Daily Press</a></p>
                         </h3>
                       </div>
                     </div>
@@ -247,7 +247,7 @@ var Portfolio = React.createClass({
                     <div className="s-item-title">
                       <div className="s-component s-text">
                         <h3 className="s-component-content s-font-heading" style={gunMetal}>
-                          <p><a target="_blank" href="https://primeedu.com.au">Prime Education Centre</a></p>
+                          <p><a target="_blank" href="http://primeedu.com.au">Prime Education Centre</a></p>
                         </h3>
                       </div>
                     </div>
