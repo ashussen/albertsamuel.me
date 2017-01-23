@@ -1,0 +1,158 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #3e3e3b;
+  position: relative;
+}
+h3 {
+  color: #4c586f;
+  padding-bottom: 20px;
+}
+.section-1 {
+  background: #ebeced;
+  height: 100vh;
+  position: relative;
+  cursor: url('mouse_follow/bug.png'), auto;
+}
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.section-1 .vertical-center {
+  margin-top: -185px;
+  height: 370px;
+}
+.vertical-center .button {
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #4c586f;
+}
+.vertical-center .button:hover {
+  background: #4c586f;
+  color: #ebeced;
+}
+.vertical-center .logo {
+  width: 300px;
+}
+
+.vertical-center .me {
+  height: 200px;
+  border: 1px solid #4c586f;
+  border-radius: 100px;
+  background: #f5f5f5;
+}
+.vertical-center .eye-container {
+  position: absolute;
+  left: calc(50% - 44px);
+  top: 76px;
+}
+.vertical-center .eye-container .eye-img-left {
+  margin-right: 11px;
+}
+/***********************
+ * LOGO SVG CSS EFFECT * 
+ ***********************/
+.section-2 {
+  height: 100vh;
+  background: #cbc5c1;
+  position: relative;
+}
+.section-2 .vertical-center {
+  margin-top: -115px;
+  height; 230px;
+}
+.section-2 .svg-logo {
+  width: 70%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-2 .svg-logo .as-logo {
+  padding-left: 35px;
+  -webkit-transition: padding 1s linear;
+     -moz-transition: padding 1s linear;
+       -o-transition: padding 1s linear;
+          transition: padding 1s linear;
+}
+.section-2 .svg-logo .as-logo:hover {
+  padding-left: 0;
+  -webkit-transition: padding 1s linear;
+     -moz-transition: padding 1s linear;
+       -o-transition: padding 1s linear;
+          transition: padding 1s linear;
+}
+.as-logo:hover {
+  cursor: pointer;
+}
+.as-logo .initial {
+  transform: translateX(143px);
+}
+.as-logo .full-name .albert {
+  transform: translate(-127px, -3px);
+}
+.as-logo #albert-clipping rect {
+  x: 490;
+  -webkit-transition: 1s linear;
+     -moz-transition: 1s linear;
+       -o-transition: 1s linear;
+          transition: 1s linear;
+}
+.as-logo:hover #albert-clipping rect {
+  x: 340;
+  -webkit-transition: 1s linear;
+     -moz-transition: 1s linear;
+       -o-transition: 1s linear;
+          transition: 1s linear; 
+} 
+.as-logo #samuel-clipping rect {
+ width: 0;
+  -webkit-transition: 1s linear;
+     -moz-transition: 1s linear;
+       -o-transition: 1s linear;
+          transition: 1s linear;
+}
+.as-logo:hover #samuel-clipping rect {
+ width: 185;
+  -webkit-transition: 1s linear;
+     -moz-transition: 1s linear;
+       -o-transition: 1s linear;
+          transition: 1s linear; 
+} 
+
+.as-logo .full-name .samuel {
+  transform: translate(-125px, -3px);
+}
+.as-logo .initial .initial-first-half {
+  -webkit-transition: 1s linear;
+     -moz-transition: 1s linear;
+       -o-transition: 1s linear;
+          transition: 1s linear; 
+}
+.as-logo:hover .initial .initial-first-half {
+  transform: translateX(-147px);
+  -webkit-transition: 1s linear;
+     -moz-transition: 1s linear;
+       -o-transition: 1s linear;
+          transition: 1s linear; 
+}
+.as-logo .initial .initial-second-half .bracket-tr,
+.as-logo .initial .initial-second-half .bracket-br {
+  -webkit-transition: 1s linear;
+     -moz-transition: 1s linear;
+       -o-transition: 1s linear;
+          transition: 1s linear; 
+}
+.as-logo:hover .initial .initial-second-half .bracket-tr,
+.as-logo:hover .initial .initial-second-half .bracket-br {
+  transform: translateX(195px);
+  -webkit-transition: 1s linear;
+     -moz-transition: 1s linear;
+       -o-transition: 1s linear;
+          transition: 1s linear; 
+}
